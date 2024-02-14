@@ -1,0 +1,22 @@
+
+.input_div {
+    display: flex;
+    align-items: center;
+    justify-content : space-between;
+    margin-top : 10px;
+    /* font-size : 20px;
+    font-weight: 500; */
+    font-family: 'Noto Sans', sans-serif;
+    
+    
+
+}
+.kk {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.input_text {
+    text-align : right;
+    border-radius : 10px;
+    border-width : 1px;
+}

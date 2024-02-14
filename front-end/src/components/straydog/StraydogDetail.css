@@ -1,0 +1,13 @@
+.info {
+    font-size: 20px;
+    font-style: initial;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* padding-left: 80px; */
+}
+.info_per {
+    display : flex;
+    justify-content : space-between;
+    margin-top : 10px;
+
+}
+

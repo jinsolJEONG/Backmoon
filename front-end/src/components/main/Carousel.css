@@ -1,0 +1,44 @@
+.fullscreen-carousel {
+    /* height: 100vh; Uncomment this if you want to take the full height of the viewport */
+    width: 100vw;
+    display: flex;
+    /* New property */
+    justify-content: flex-end;
+    /* New property to align the content to the right */
+    align-items: center;
+    /* New property to vertically center the content */
+    object-fit: cover;
+}
+
+.carousel-caption {
+    /* position: absolute; No longer required */
+
+
+    /* left: 100%; No longer required */
+    /* right: 50%; No longer required */
+    /* transform: translate(-50%, -50%); No longer required */
+    text-align: center;
+    /* margin-left: 230px; Commented out - adjust if needed */
+
+    /* Optional - for some space from the right edge */
+    margin-right: 7%;
+}
+
+.pad {
+    padding-left: 800px;
+    /* Adjust this if required */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 4s;
+}

@@ -1,0 +1,143 @@
+.menubutton {
+    height: 50px;
+    width: 50px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-menu a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+#topMenu {
+    height: 30px;
+}
+
+#topMenu ul {
+    /* 메인 메뉴 안의 ul을 설정함: 상위메뉴의 ul+하위 메뉴의 ul */
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#topMenu ul li {
+    /* 메인 메뉴 안에 ul 태그 안에 있는 li 태그의 스타일 적용(상위/하위메뉴 모두) */
+    color: white;
+    background-color: none;
+    float: left;
+    line-height: 30px;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+
+}
+
+.menuLink,
+.submenuLink {
+    /* 상위 메뉴와 하위 메뉴의 a 태그에 공통으로 설정할 스타일 */
+    text-decoration: none;
+    display: block;
+    width: 120px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.menuLink {
+    /* 상위 메뉴의 글씨색을 흰색으로 설정 */
+    color: black;
+    font-size: 17px;
+}
+
+.topMenuLi:hover .menuLink {
+    /* 상위 메뉴의 li에 마우스오버 되었을 때 스타일 설정 */
+    /* color: white; */
+    /* background-color: #4d4d4d; */
+    /* border-radius: 5px; */
+}
+
+.longLink {
+    /* 좀 더 긴 메뉴 스타일 설정 */
+    /* width: 190px; */
+}
+
+.submenuLink {
+    /* 하위 메뉴의 a 태그 스타일 설정 */
+    color: #2d2d2d;
+    background-color: none;
+    /* border: solid 1px black; */
+    /* margin-right: -1px; */
+    /* border-radius: 5px; */
+    /* [변경] 위 칸의 하단 테두리와 아래칸의 상단 테두리가 겹쳐지도록 설덩 */
+    text-align: left;
+    padding-left: 18px;
+}
+
+.submenu {
+    /* 하위 메뉴 스타일 설정 */
+    position: absolute;
+    width: 120px;
+    height: auto;
+    overflow: hidden;
+    transition: opacity .2s, visibility .2s;
+    /* transition을 visibility와 opacity에 적용합니다 */
+    visibility: hidden;
+    /* 초기 상태에서는 보이지 않도록 합니다 */
+    opacity: 0;
+    /* 초기 상태에서는 투명하게 합니다 */
+}
+
+.submenu li {
+    display: block;
+    /* width: 100%; */
+    /* [변경] 가로로 펼쳐지도록 설정 */
+}
+
+.topMenuLi:hover .submenu {
+    /* 상위 메뉴에 마우스를 올렸을 때 하위 메뉴의 스타일을 설정 */
+    visibility: visible;
+    /* 보이도록 설정합니다 */
+    opacity: 1;
+    /* 투명도를 없애서 완전히 보이게 합니다 */
+}
+
+.backg {
+    background-color: #e2d9ce;
+}
+
+.hidden-button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.banner{
+    /* display : flex; */
+    position : fixed;
+    background-color : #DB7B0A;
+    bottom : 0;
+    right : 0px;
+    width : 300px;
+    height : 250px;
+    color : white;
+    font-size : 20px;
+    border-radius : 10px;
+    transform: translateY(0);
+    transition: transform 2s ease-in-out;
+    z-index: 1;
+}

@@ -1,0 +1,36 @@
+.guidecard {
+    height: 200%;
+    width: 800px;
+    background-color: white;
+    margin: 20px;
+
+    border-radius: 20px;
+    display: flex;
+}
+
+.guidecard-img {
+    width: 400px;
+    height: 200px;
+
+    border-radius: 20px 0px 0px 20px
+}
+
+.guidecard-txt {
+    width: 400px;
+    height: 200px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: pre-wrap
+}
+
+.text-title {
+    text-align: center;
+    border-bottom: 1px solid gray;
+    margin-bottom: 15px
+}
+
+.text {
+    text-align: center;
+}

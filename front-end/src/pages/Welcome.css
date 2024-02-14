@@ -1,0 +1,316 @@
+.welcomebody {
+    margin: 0;
+    overflow-y: hidden;
+}
+
+.outer {
+    position: relative;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+/* Hide scrollbar */
+.outer::-webkit-scrollbar {
+    display: none;
+}
+
+.inner {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.bg-1 {
+    background-color: #D4E5F3;
+}
+
+.bg-2 {
+    background-color: #C3A193;
+}
+
+.bg-3 {
+    background-color: #C3A193;
+}
+
+.bg-4 {
+    background-color: #C3A193;
+    display: flex;
+    align-items: flex-end;
+    /* Align vertically to the bottom */
+    justify-content: flex-start;
+    /* Align horizontally to the start */
+    padding-left: 0;
+    /* Set this to 0 to stick to the very edge */
+    padding-bottom: 50px;
+    /* Some padding to not stick to the very edge */
+}
+
+.divider {
+    width: 100%;
+    height: 5px;
+    background-color: #C3A193;
+    color: #C3A193;
+}
+
+.pad {
+    padding-right: 50px;
+}
+
+
+.speech-bubble {
+    position: relative;
+    /* padding: 100px 25px; */
+    /* Increased vertical padding to increase height */
+    background: #C3A193;
+    border-radius: 999px;
+    /* margin-right: 100px; */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    color: white;
+    width: 300px;
+    text-align: center;
+    height: 200px;
+    /* Optional: You can set a specific height if needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+
+}
+
+.speech-bubble2 {
+    position: relative;
+    /* padding: 100px 25px; */
+    /* Increased vertical padding to increase height */
+    background: #C3A193;
+    border-radius: 999px;
+    /* margin-right: 100px; */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    color: white;
+    width: 300px;
+    text-align: center;
+    height: 200px;
+    /* Optional: You can set a specific height if needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+
+}
+
+.speech-bubble3 {
+    position: relative;
+    /* padding: 100px 25px; */
+    /* Increased vertical padding to increase height */
+    background: #C3A193;
+    border-radius: 999px;
+    /* margin-right: 100px; */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    color: white;
+    width: 300px;
+    text-align: center;
+    height: 200px;
+    /* Optional: You can set a specific height if needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+
+}
+
+.speech-bubble:before {
+    content: '';
+    position: absolute;
+    background: #ccc;
+    height: 23px;
+    width: 23px;
+    border-radius: 100%;
+    bottom: -25px;
+    left: 180px;
+    /* 조정된 위치 */
+}
+
+.speech-bubble:after {
+    content: '';
+    position: absolute;
+    background: #ccc;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    bottom: -51px;
+    left: 190px;
+    /* 조정된 위치 */
+}
+
+.bubble-tail {
+    position: absolute;
+    background: #ccc;
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    bottom: -70px;
+    left: 205px;
+    /* 조정된 위치 */
+}
+
+.speech-bubble3:before {
+    content: '';
+    position: absolute;
+    background: #ccc;
+    height: 23px;
+    width: 23px;
+    border-radius: 100%;
+    bottom: -25px;
+    left: 145px;
+    /* 조정된 위치 */
+}
+
+.speech-bubble3:after {
+    content: '';
+    position: absolute;
+    background: #ccc;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    bottom: -50px;
+    left: 150px;
+    /* 조정된 위치 */
+}
+
+.bubble-tail3 {
+    position: absolute;
+    background: #ccc;
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    bottom: -70px;
+    left: 155px;
+    /* 조정된 위치 */
+}
+
+.speech-bubble2:before {
+    content: '';
+    position: absolute;
+    background: #ccc;
+    height: 23px;
+    width: 23px;
+    border-radius: 100%;
+    bottom: -25px;
+    left: 120px;
+    /* 조정된 위치 */
+}
+
+.speech-bubble2:after {
+    content: '';
+    position: absolute;
+    background: #ccc;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    bottom: -50px;
+    left: 115px;
+    /* 조정된 위치 */
+}
+
+.bubble-tail2 {
+    position: absolute;
+    background: #ccc;
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    bottom: -70px;
+    left: 105px;
+    /* 조정된 위치 */
+}
+
+
+
+.contactButton {
+    background-color: #C3A193;
+    /* 파란색 배경 */
+    color: white;
+    /* 글자색 */
+    padding: 10px 20px;
+    /* 상하 좌우 패딩 */
+    border: none;
+    /* 테두리 없음 */
+    border-radius: 50px;
+    /* 모서리 라운드 처리 */
+    font-size: 20px;
+    cursor: pointer;
+    /* 마우스 오버시 포인터 모양으로 */
+    transition: 0.3s;
+    /* 마우스 오버 효과 시간 */
+    text-decoration: none;
+    /* 밑줄 제거 */
+    display: block;
+    /* 블록 요소로 */
+    width: 200px;
+    /* 버튼 너비 */
+    text-align: center;
+    /* 텍스트 중앙 정렬 */
+    margin-bottom: 20px;
+    /* 버튼 아래 여백 */
+}
+
+.contactButton:hover {
+    background-color: #8F5E34;
+    /* 마우스 오버시 약간 어두운 파란색으로 */
+}
+
+
+
+.inner2 {
+    height: 100vh;
+    display: flex;
+    /* flex-direction: column; */
+    /* 추가됨 */
+    justify-content: space-between;
+    /* 변경됨 */
+    align-items: center;
+    /* 추가됨 */
+    font-size: 18px;
+    padding-left: 20px;
+    /* 왼쪽 패딩을 추가하여 컨텐츠를 약간 오른쪽으로 밀어냄 */
+}
+
+.company-info {
+    text-align: left;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-top: 90px;
+
+}
+
+.footer-info {
+    margin-top: 50px;
+    text-align: left;
+    margin-left: 100px;
+}
+
+.highlight {
+    /* text-decoration: underline; */
+    /* 밑줄 */
+    font-weight: bold;
+    /* 굵게 */
+    font-family: 'Arial', sans-serif;
+    /* 폰트 변경, 원하는 폰트로 변경 가능 */
+    font-size: 22px;
+}
+
+.text-section {
+    width: 60%;
+    /* 화면의 60%를 차지하게 설정. 원하는 비율로 조절 가능 */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 90px;
+}
+
+.large-image {
+    width: 50%;
+    /* 화면의 35%를 차지하게 설정. 원하는 비율로 조절 가능 */
+    height: auto;
+    /* 이미지 비율 유지 */
+}
